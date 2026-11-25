@@ -9,7 +9,8 @@ a { color:inherit; text-decoration:none; }
 header { background:var(--navy); color:#fff; }
 nav { height:88px; display:flex; align-items:center; justify-content:space-between; }
 .brand { display:flex; align-items:center; gap:12px; font-family:"Playfair Display",serif; font-size:18px; }
-.seal { width:52px; height:52px; border:2px solid rgba(255,255,255,.7); border-radius:50%; display:grid; place-items:center; color:var(--gold); font-size:24px; }
+.seal { width:58px; height:58px; display:grid; place-items:center; flex:0 0 auto; }
+.seal img { width:58px; height:58px; object-fit:contain; }
 .nav-links { display:flex; align-items:center; gap:26px; font-size:14px; font-weight:700; }
 .apply { border:1px solid rgba(255,255,255,.6); padding:10px 16px; }
 .menu { display:none; border:0; background:none; color:white; font-size:26px; }
