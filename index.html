@@ -101,6 +101,18 @@
     .faith-copy { padding: 64px 58px; display: flex; flex-direction: column; justify-content: center; }
     .faith-copy p { color: var(--muted); line-height: 1.85; }
 
+    .pillars { background: var(--white); }
+    .pillars-heading { text-align: center; max-width: 680px; margin: 0 auto 44px; }
+    .pillars-heading h2 { margin-bottom: 0; }
+    .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #e6e1d5; border-left: 1px solid #e6e1d5; }
+    .pillar { position: relative; min-height: 300px; padding: 38px 28px 32px; border-right: 1px solid #e6e1d5; border-bottom: 1px solid #e6e1d5; transition: .28s; }
+    .pillar:hover { background: var(--navy); color: var(--white); transform: translateY(-6px); box-shadow: 0 18px 40px rgba(24,49,59,.12); }
+    .pillar-number { display: block; color: #b28a32; font-family: "Playfair Display", serif; font-size: 42px; line-height: 1; margin-bottom: 24px; }
+    .pillar h3 { color: var(--navy); font-family: "Playfair Display", serif; font-size: 24px; line-height: 1.15; margin: 0 0 14px; }
+    .pillar p { color: var(--muted); line-height: 1.72; margin: 0; }
+    .pillar:hover h3 { color: var(--gold); }
+    .pillar:hover p { color: rgba(255,255,255,.72); }
+
     .cta { margin: 0; padding: 72px 0; background: var(--gold); color: var(--navy); }
     .cta-inner { display: flex; align-items: center; justify-content: space-between; }
     .cta h2 { margin: 0; font-size: 44px; }
@@ -129,6 +141,7 @@
       .intro-images { margin-top: 20px; }
       .program-grid { grid-template-columns: 1fr; }
       .faith-grid { grid-template-columns: 1fr; }
+      .pillar-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
     }
     @media (max-width: 600px) {
@@ -148,6 +161,7 @@
       .image-accent { height: 170px; }
       .programs-head { align-items: flex-start; }
       .faith-copy { padding: 42px 28px; }
+      .pillar-grid { grid-template-columns: 1fr; }
       .cta-inner { align-items: flex-start; flex-direction: column; gap: 24px; }
       .cta h2 { font-size: 36px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -219,6 +233,37 @@
           <span class="shape"></span>
           <img class="image-main" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students learning together">
           <img class="image-accent" src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=600&q=85" alt="Students on campus">
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" aria-labelledby="pillars-title">
+      <div class="shell">
+        <div class="pillars-heading">
+          <div class="section-kicker">What We Stand For</div>
+          <h2 id="pillars-title">The Four Pillars</h2>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar">
+            <span class="pillar-number">I</span>
+            <h3>Academic Excellence</h3>
+            <p>Rigorous academics that challenge students to think critically and develop a genuine love for learning.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">II</span>
+            <h3>Faith Formation</h3>
+            <p>Deepening faith through Catholic tradition, prayer, and a personal relationship with God.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">III</span>
+            <h3>Community Service</h3>
+            <p>Reaching out to those in need, putting the Gospel into practice through hands-on service.</p>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">IV</span>
+            <h3>Holistic Development</h3>
+            <p>Shaping students who are not only skilled and knowledgeable but also grounded in strong values.</p>
+          </article>
         </div>
       </div>
     </section>
