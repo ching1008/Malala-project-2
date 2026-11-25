@@ -7,6 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .credo { background:#eee8dc; }
+    .credo-grid { display:grid; grid-template-columns:.75fr 1.25fr; gap:64px; align-items:start; }
+    .motto-card { background:var(--navy); color:white; padding:46px 38px; border-top:5px solid var(--gold); }
+    .motto-card .kicker { margin-bottom:18px; }
+    .motto-card blockquote { margin:0; font-family:"Playfair Display",serif; font-size:clamp(34px,4vw,52px); line-height:1.12; }
+    .motto-card blockquote span { display:block; color:var(--gold); font-family:"DM Sans",sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; margin-top:18px; }
+    .philosophy h2 { margin:8px 0 24px; }
+    .philosophy-intro { color:var(--navy); font-size:18px; line-height:1.8; }
+    .principle { border-top:1px solid #d8d1c2; padding:22px 0; }
+    .principle h3 { color:var(--navy); font-family:"Playfair Display",serif; font-size:21px; margin:0 0 8px; }
+    .principle p { color:var(--muted); line-height:1.8; margin:0; }
+    @media(max-width:800px){.credo-grid{grid-template-columns:1fr;gap:32px}}
+  </style>
 </head>
 <body>
   <header>
@@ -23,6 +37,31 @@
       <article class="card"><h2>Excellence</h2><p>We encourage curiosity and achievement through meaningful teaching and learning.</p></article>
       <article class="card"><h2>Service</h2><p>We prepare graduates to contribute to their families, communities, and the wider world.</p></article>
     </div></section>
+    <section class="credo content">
+      <div class="shell credo-grid">
+        <aside class="motto-card">
+          <div class="kicker">The School Motto</div>
+          <blockquote>“Teach ye all nations.”<span>Matthew 28:19</span></blockquote>
+        </aside>
+        <div class="philosophy">
+          <div class="kicker">Our Guiding Credo</div>
+          <h2>School Philosophy</h2>
+          <p class="philosophy-intro">Kabankalan Catholic College, Inc. is committed to forming socially conscious, responsible, and service-oriented individuals, guided by the teachings of Christ. They embody a profound understanding of the challenges and opportunities inherent in a rapidly evolving world.</p>
+          <div class="principle">
+            <h3>Evangelizing Faith</h3>
+            <p>As an evangelizing arm of the Diocese of Kabankalan, KCC seeks to proclaim and spread the teachings of the Church. The institution shepherds students and the community toward a deeper relationship with Christ; strengthening faith that transforms lives through service, compassion, and steadfast devotion to Christian values.</p>
+          </div>
+          <div class="principle">
+            <h3>Education and Human Dignity</h3>
+            <p>As a preferential option for the poor, Kabankalan Catholic College affirms that education is a universal right. Rooted in a curriculum that integrates the arts, sciences, and the Gospel, a KCC education fosters well-rounded development — one that nurtures each person's mind, body, and soul within a safe and supportive environment.</p>
+          </div>
+          <div class="principle">
+            <h3>Excellence with Moral Purpose</h3>
+            <p>As an educational institution, KCC seeks academic excellence with a strong moral foundation characterized by integrity, compassion, and generosity. Our students and graduates are equipped with the skills, knowledge, and disposition necessary to contribute positively to society and to respond effectively to the needs of the Diocese, the nation, and the global community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="cta"><div class="shell"><h2>Learn with purpose.</h2><a class="button" href="courses.html">Explore Programs</a></div></section>
   </main>
   <footer><div class="shell"><div class="footer-grid"><div><h3>Kabankalan Catholic College</h3><p>Faith. Excellence. Service.</p></div><div><h4>Academics</h4><p>Programs</p></div><div><h4>Discover</h4><p>Campus Life</p></div><div><h4>Connect</h4><p>Contact Us</p></div></div><div class="copyright">© 2026 Kabankalan Catholic College</div></div></footer>
