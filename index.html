@@ -126,6 +126,18 @@
     .pillar p { color: var(--muted); line-height: 1.72; margin: 0; }
     .pillar:hover h3 { color: var(--gold); }
     .pillar:hover p { color: rgba(255,255,255,.72); }
+    .shs { background: #eee8dc; }
+    .shs-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 42px; }
+    .shs-heading h2 { margin-bottom: 0; }
+    .shs-heading p { color: var(--muted); line-height: 1.75; margin: 0; }
+    .track-group { margin-top: 24px; }
+    .track-label { display: inline-block; color: var(--navy); background: var(--gold); padding: 8px 12px; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
+    .track-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 14px; }
+    .track-card { background: var(--white); border-top: 4px solid var(--navy); padding: 24px; min-height: 220px; box-shadow: 0 10px 30px rgba(24,49,59,.07); }
+    .track-code { color: #b28a32; font-family: "Playfair Display", serif; font-size: 34px; }
+    .track-card h3 { color: var(--navy); font-family: "Playfair Display", serif; font-size: 21px; margin: 8px 0 10px; }
+    .track-card p { color: var(--muted); line-height: 1.65; font-size: 13px; margin: 0; }
+    .technical-grid { grid-template-columns: repeat(3, 1fr); }
 
     .cta { margin: 0; padding: 72px 0; background: var(--gold); color: var(--navy); }
     .cta-inner { display: flex; align-items: center; justify-content: space-between; }
@@ -157,6 +169,8 @@
       .college-grid { grid-template-columns: 1fr; }
       .faith-grid { grid-template-columns: 1fr; }
       .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+      .shs-heading { grid-template-columns: 1fr; gap: 18px; }
+      .track-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
     }
     @media (max-width: 600px) {
@@ -177,6 +191,7 @@
       .programs-head { align-items: flex-start; }
       .faith-copy { padding: 42px 28px; }
       .pillar-grid { grid-template-columns: 1fr; }
+      .track-grid, .technical-grid { grid-template-columns: 1fr; }
       .cta-inner { align-items: flex-start; flex-direction: column; gap: 24px; }
       .cta h2 { font-size: 36px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -201,7 +216,7 @@
       </a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#about">About</a><a href="#programs">Academics</a><a href="#campus">Campus Life</a><a href="#faith">Mission</a>
+        <a href="#about">About</a><a href="#senior-high">Senior High</a><a href="#programs">Academics</a><a href="#faith">Mission</a>
         <a class="apply-btn" href="#apply">Apply Now</a>
       </div>
     </nav>
@@ -279,6 +294,65 @@
             <h3>Holistic Development</h3>
             <p>Shaping students who are not only skilled and knowledgeable but also grounded in strong values.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shs" id="senior-high" aria-labelledby="shs-title">
+      <div class="shell">
+        <div class="shs-heading">
+          <div>
+            <div class="section-kicker">Grades 11 & 12</div>
+            <h2 id="shs-title">Senior High School</h2>
+          </div>
+          <p>KCC Senior High School has both Academic and TVL tracks so students can follow the path that fits their interests and goals. Every track includes Catholic values formation and activities that develop the whole person.</p>
+        </div>
+
+        <div class="track-group">
+          <span class="track-label">Academic Track</span>
+          <div class="track-grid">
+            <article class="track-card">
+              <span class="track-code">STEM</span>
+              <h3>Science, Technology, Engineering, and Mathematics</h3>
+              <p>Advanced mathematics, sciences, and research for students pursuing engineering, medicine, IT, architecture, and research.</p>
+            </article>
+            <article class="track-card">
+              <span class="track-code">ABM</span>
+              <h3>Accountancy, Business, and Management</h3>
+              <p>Business finance, economics, management, and marketing for future entrepreneurs and business professionals.</p>
+            </article>
+            <article class="track-card">
+              <span class="track-code">HUMSS</span>
+              <h3>Humanities and Social Sciences</h3>
+              <p>Writing, social studies, politics, and community engagement for careers in education, law, psychology, and public service.</p>
+            </article>
+            <article class="track-card">
+              <span class="track-code">GAS</span>
+              <h3>General Academic Strand</h3>
+              <p>A flexible strand for undecided students, covering humanities, social sciences, applied economics, and other electives.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="track-group">
+          <span class="track-label">Technical Professional Track</span>
+          <div class="track-grid technical-grid">
+            <article class="track-card">
+              <span class="track-code">ICT</span>
+              <h3>Information and Communications Technology</h3>
+              <p>Computer programming, web development, computer systems servicing, and digital literacy.</p>
+            </article>
+            <article class="track-card">
+              <span class="track-code">HE</span>
+              <h3>Home Economics</h3>
+              <p>Food and beverage service, bread and pastry production, cookery, dressmaking, beauty care, and household services.</p>
+            </article>
+            <article class="track-card">
+              <span class="track-code">IA</span>
+              <h3>Industrial Arts</h3>
+              <p>Electrical installation, plumbing, carpentry, and automotive servicing for technical and industrial careers.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
