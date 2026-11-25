@@ -94,6 +94,20 @@
     .program-num { color: var(--gold); font-size: 12px; letter-spacing: 2px; }
     .program-info h3 { font-family: "Playfair Display", serif; font-size: 26px; margin: 8px 0 6px; }
     .program-info p { color: rgba(255,255,255,.68); font-size: 13px; }
+    .programs .programs-intro { max-width: 650px; margin: 14px 0 38px; color: rgba(255,255,255,.72); line-height: 1.75; }
+    .college-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
+    .college { background: var(--navy-2); border: 1px solid rgba(255,255,255,.1); }
+    .college-title { min-height: 118px; display: flex; align-items: end; padding: 24px; border-bottom: 1px solid rgba(255,255,255,.1); }
+    .college-title h3 { font-family: "Playfair Display", serif; font-size: 23px; line-height: 1.16; margin: 0; color: var(--white); }
+    .degree-list { list-style: none; margin: 0; padding: 0 24px 12px; }
+    .degree-list li { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .degree-list li:last-child { border-bottom: 0; }
+    .degree-list details { padding: 17px 0; }
+    .degree-list summary { cursor: pointer; color: var(--gold); font-weight: 700; font-size: 14px; line-height: 1.45; list-style: none; }
+    .degree-list summary::-webkit-details-marker { display: none; }
+    .degree-list summary::after { content: "+"; float: right; font-size: 18px; line-height: 1; margin-left: 10px; }
+    .degree-list details[open] summary::after { content: "−"; }
+    .degree-list details p { color: rgba(255,255,255,.68); font-size: 13px; line-height: 1.65; margin: 12px 0 4px; }
 
     .faith { padding-bottom: 80px; }
     .faith-grid { display: grid; grid-template-columns: 1.05fr .95fr; background: white; box-shadow: 0 20px 60px rgba(24,49,59,.08); }
@@ -140,6 +154,7 @@
       .intro { grid-template-columns: 1fr; }
       .intro-images { margin-top: 20px; }
       .program-grid { grid-template-columns: 1fr; }
+      .college-grid { grid-template-columns: 1fr; }
       .faith-grid { grid-template-columns: 1fr; }
       .pillar-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
@@ -271,13 +286,42 @@
     <section class="programs" id="programs">
       <div class="shell">
         <div class="programs-head">
-          <div><div class="section-kicker">Find Your Path</div><h2>Academic Programs</h2></div>
-          <a class="text-link" style="color:white" href="#">View all programs <span>→</span></a>
+          <div>
+            <div class="section-kicker">Find Your Path</div>
+            <h2>Academic Programs</h2>
+          </div>
+          <a class="text-link" style="color:white" href="https://kcc.wela.ph/" target="_blank" rel="noopener noreferrer">Apply for admission <span>→</span></a>
         </div>
-        <div class="program-grid">
-          <article class="program-card"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=85" alt=""><div class="program-info"><span class="program-num">01</span><h3>Business & Management</h3><p>Build enterprise-ready leadership and management skills.</p></div></article>
-          <article class="program-card"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=85" alt=""><div class="program-info"><span class="program-num">02</span><h3>Education & Teacher Training</h3><p>Inspire the next generation with knowledge and purpose.</p></div></article>
-          <article class="program-card"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=700&q=85" alt=""><div class="program-info"><span class="program-num">03</span><h3>Science & Technology</h3><p>Turn innovation and discovery into meaningful progress.</p></div></article>
+        <p class="programs-intro">From business and IT to education and criminology, KCC prepares students for the careers they want to pursue.</p>
+        <div class="college-grid">
+          <article class="college">
+            <div class="college-title"><h3>College of Management, Accountancy and Technology</h3></div>
+            <ul class="degree-list">
+              <li><details><summary>Bachelor of Science in Business Administration</summary><p>The BSBA program prepares students for careers in business and management. Students develop competencies in financial analysis, marketing strategy, organizational management, and entrepreneurship.</p></details></li>
+              <li><details><summary>Bachelor of Science in Information Technology</summary><p>The BSIT program develops future-ready IT professionals with skills in software development, networking, database management, and emerging technologies. Students gain hands-on experience in building real-world applications.</p></details></li>
+              <li><details><summary>Bachelor of Science in Accountancy</summary><p>The BSA program develops competent and ethical accountants prepared for the CPA licensure examination. Students gain expertise in financial accounting, auditing, taxation, and management advisory services.</p></details></li>
+              <li><details><summary>Bachelor of Science in Accounting Information System</summary><p>The BSAIS program integrates accounting knowledge with information technology skills. Students learn to design, implement, and manage accounting information systems for modern business environments.</p></details></li>
+              <li><details><summary>Bachelor of Science in Management Accounting</summary><p>The BSMA program focuses on strategic financial management and decision-making. Students develop skills in cost analysis, budgeting, performance evaluation, and strategic planning for organizations.</p></details></li>
+              <li><details><summary>Bachelor of Science in Tourism Management</summary><p>The BSTM program prepares students for careers in the dynamic tourism and hospitality industry. Students learn tourism planning, event management, and sustainable tourism development.</p></details></li>
+            </ul>
+          </article>
+          <article class="college">
+            <div class="college-title"><h3>College of Education, Arts and Sciences</h3></div>
+            <ul class="degree-list">
+              <li><details><summary>Bachelor of Elementary Education</summary><p>The BEEd program prepares dedicated and competent educators for elementary education. The curriculum provides strong pedagogical foundations and content knowledge for effective teaching of young learners.</p></details></li>
+              <li><details><summary>Bachelor of Secondary Education</summary><p>The BSEd program trains future secondary school teachers with specializations in various fields of study. Graduates are equipped with advanced subject matter knowledge and teaching methodologies.</p></details></li>
+              <li><details><summary>Bachelor of Early Childhood Education</summary><p>The BECEd program prepares educators specializing in early childhood development and education. Students learn to create meaningful learning experiences that nurture curiosity, confidence, and a love for learning in young children.</p></details></li>
+              <li><details><summary>Bachelor of Physical Education</summary><p>The BPEd program develops competent physical education teachers and sports professionals. Students gain knowledge in exercise science, sports coaching, and health-related fitness instruction.</p></details></li>
+              <li><details><summary>Bachelor of Arts in Philosophy</summary><p>The AB Philosophy program develops critical thinking, analytical reasoning, and ethical reflection. Students explore fundamental questions about existence, knowledge, values, and the human condition.</p></details></li>
+              <li><details><summary>Bachelor of Science in Psychology</summary><p>The BS Psychology program provides a comprehensive understanding of human behavior, mental processes, and psychological well-being. Students develop skills in counseling, assessment, and research.</p></details></li>
+            </ul>
+          </article>
+          <article class="college">
+            <div class="college-title"><h3>College of Criminology</h3></div>
+            <ul class="degree-list">
+              <li><details><summary>Bachelor of Science in Criminology</summary><p>The BS Criminology program trains future law enforcement professionals with a strong foundation in criminal justice, forensic science, and law enforcement administration.</p></details></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
