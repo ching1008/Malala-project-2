@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | Kabankalan Catholic College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .contact-intro { display:grid; grid-template-columns:.7fr 1.3fr; gap:70px; align-items:start; }
+    .contact-heading h2 { margin:8px 0 18px; }
+    .contact-heading p { color:var(--muted); line-height:1.8; }
+    .contact-grid { display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid #ddd6c7; border-left:1px solid #ddd6c7; }
+    .contact-card { min-height:180px; padding:28px; border-right:1px solid #ddd6c7; border-bottom:1px solid #ddd6c7; }
+    .contact-card span { color:#b28a32; font-family:"Playfair Display",serif; font-size:32px; }
+    .contact-card h3 { color:var(--navy); margin:10px 0 8px; }
+    .contact-card p { color:var(--muted); line-height:1.7; margin:0; }
+    .message-section { background:white; }
+    .message-grid { display:grid; grid-template-columns:.75fr 1.25fr; gap:64px; }
+    .message-copy h2 { margin:8px 0 18px; }
+    .message-copy p { color:var(--muted); line-height:1.8; }
+    .contact-form { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .field { display:flex; flex-direction:column; gap:8px; }
+    .field.full { grid-column:1/-1; }
+    label { color:var(--navy); font-size:13px; font-weight:800; }
+    input,textarea { width:100%; border:1px solid #d8d1c2; background:#fbfaf6; padding:14px 16px; font:inherit; color:var(--ink); }
+    textarea { min-height:150px; resize:vertical; }
+    .contact-form .button { border:0; cursor:pointer; justify-self:start; }
+    .site-footer { background:#0b242f; color:rgba(255,255,255,.72); }
+    .site-footer-grid { display:grid; grid-template-columns:1.5fr .75fr 1fr .8fr; gap:44px; }
+    .site-footer h3,.site-footer h4 { color:white; }
+    .footer-brand { display:flex; align-items:center; gap:12px; }
+    .footer-brand img { width:44px; height:44px; object-fit:contain; }
+    .footer-brand h3 { margin:0; }
+    .site-footer ul { list-style:none; padding:0; margin:0; }
+    .site-footer li { margin:9px 0; }
+    .mission-quote { color:white; border-left:3px solid var(--gold); padding-left:16px; font-family:"Playfair Display",serif; line-height:1.6; }
+    .facebook-link { display:inline-block; margin-top:12px; color:var(--gold); font-weight:800; }
+    @media(max-width:800px){
+      .contact-intro,.message-grid,.site-footer-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .contact-form{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="shell">
+      <a class="brand" href="index.html"><span class="seal"><img src="assets/kcc-logo.png" alt="Kabankalan Catholic College logo"></span><span>Kabankalan Catholic College</span></a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="about.html">About</a><a href="senior-high.html">Senior High</a><a href="courses.html">Academics</a><a href="events.html">Campus Life</a><a href="contact.html">Contact</a><a class="apply" href="https://kcc.wela.ph/" target="_blank" rel="noopener noreferrer">Apply Now</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero"><div class="shell"><div class="kicker">Est. 1927</div><h1>Contact Us</h1></div></section>
+
+    <section class="content">
+      <div class="shell contact-intro">
+        <div class="contact-heading">
+          <div class="kicker" style="color:#b28a32">Where to Find Us</div>
+          <h2>Visit, Call, or Write</h2>
+          <p>Have questions about enrollment, programs, or campus life? We're happy to help.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card"><span>I</span><h3>Address</h3><p>Guanzon St., Brgy. 1<br>Kabankalan City, Negros Occidental</p></article>
+          <article class="contact-card"><span>II</span><h3>Phone</h3><p><a href="tel:+63324712479">(032) 4712-479</a></p></article>
+          <article class="contact-card"><span>III</span><h3>Email</h3><p><a href="mailto:kcc_1927@yahoo.com">kcc_1927@yahoo.com</a></p></article>
+          <article class="contact-card"><span>IV</span><h3>Office Hours</h3><p>8:00 AM – 12:00 NN<br>1:00 PM – 5:00 PM</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section content">
+      <div class="shell message-grid">
+        <div class="message-copy"><div class="kicker" style="color:#b28a32">Inquiries Welcome</div><h2>Send Us a Message</h2><p>Write to us and we'll get back to you soon.</p></div>
+        <form class="contact-form" action="#" method="post">
+          <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" required></div>
+          <div class="field full"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div>
+          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <button class="button full" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell" style="padding:58px 0 22px">
+      <div class="site-footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html"><img src="assets/kcc-logo.png" alt="KCC logo"><h3>Kabankalan Catholic College</h3></a>
+          <p>Catholic Education: Our Identity, Our Mission</p>
+          <p>A Catholic school in Kabankalan City forming students who are grounded in faith, strong in academics, and ready to serve.</p>
+          <p>Guanzon St., Brgy. 1, Kabankalan City, Negros Occidental<br>(032) 4712-479<br>kcc_1927@yahoo.com</p>
+        </div>
+        <div><h4>Quick Links</h4><ul><li><a href="about.html">About KCC</a></li><li><a href="courses.html">College Programs</a></li><li><a href="senior-high.html">Senior High School</a></li><li><a href="https://kcc.edu.ph/basic-education">Basic Education</a></li><li><a href="#">News & Updates</a></li><li><a href="https://kcc.wela.ph/" target="_blank" rel="noopener noreferrer">Admissions</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Handbook</a></li></ul></div>
+        <div><h4>Our Mission</h4><p class="mission-quote">KCC commits to provide quality and inclusive Catholic education, rooted in the Gospel and driven by innovative research and meaningful community engagements, empowering its members to become effective agents of societal transformation.</p></div>
+        <div><h4>Follow Us</h4><a class="facebook-link" href="https://www.facebook.com/KCCInc1927" target="_blank" rel="noopener noreferrer">Facebook<br>@KCCInc1927</a></div>
+      </div>
+      <div class="copyright">© 2026 Kabankalan Catholic College</div>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
